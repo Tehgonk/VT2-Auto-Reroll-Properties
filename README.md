@@ -1,6 +1,6 @@
 # VT2-Auto-Reroll-Properties
 
-This script crates a menu system for (almost) all possible item property combinations that can be used to automate the rerolling process.
+This script automates the rerolling process by crating a menu system with (almost) all the possible item property combinations that once selected, will reroll the item until the chosen combination is found.
 
 It uses OCR to cature the current properties on the item in the reroll slot and checks that agaisnt a predefined set of words that are associated with the menu item you selected. Make sure to read further for all the requirement and usage instructions.
 
