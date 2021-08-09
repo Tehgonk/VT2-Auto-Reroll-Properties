@@ -32,9 +32,9 @@ This stops the game windows from minimising every time you interact with the scr
 
 After ensuring that your directory tree looks like this:
 
-_|   Auto Reroll.ahk
+```
+|   Auto Reroll.ahk
 |   BG.png
-|   output.txt
 |   ReadMe.txt
 |   
 +---bin
@@ -56,6 +56,7 @@ _|   Auto Reroll.ahk
         Gdip_All.ahk
         JSON.ahk
         Vis2.ahk_
+```
 
 And that you have met the requirements above, the hotkeys for the script are:
 
