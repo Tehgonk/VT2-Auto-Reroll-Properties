@@ -1,7 +1,7 @@
 /*
-Name: Auto Reroll.ahk
+Name: Auto Re-roll.ahk
 Author: Bonk
-Version: 0.9
+Version: 0.9.0.1
 */
 
 #NoEnv
@@ -138,10 +138,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Block Cost")
@@ -163,10 +169,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Crit Chance")
@@ -188,10 +200,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Crit Power")
@@ -213,10 +231,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Stamina")
@@ -238,10 +262,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Chaos")
@@ -263,10 +293,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Skaven")
@@ -288,10 +324,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Crit Chance")
@@ -313,10 +355,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Crit Power")
@@ -338,10 +386,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Block Angle")
@@ -363,10 +417,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Chaos")
@@ -388,10 +448,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Skaven")
@@ -413,10 +479,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Crit Power")
@@ -438,10 +510,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Chaos")
@@ -463,10 +541,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Skaven")
@@ -488,10 +572,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Chaos")
@@ -513,10 +603,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Skaven")
@@ -538,10 +634,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Cost")
@@ -563,10 +665,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Crit Chance")
@@ -588,10 +696,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Crit Power")
@@ -613,10 +727,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Angle")
@@ -638,10 +758,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Chaos")
@@ -663,10 +789,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Skaven")
@@ -688,10 +820,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Skaven")
@@ -714,10 +852,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Crit Power")
@@ -739,10 +883,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Armoured")
@@ -764,10 +914,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Berserkers")
@@ -789,10 +945,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Chaos")
@@ -814,10 +976,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Infantry")
@@ -839,10 +1007,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Monsters")
@@ -864,10 +1038,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Skaven")
@@ -889,10 +1069,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Armoured")
@@ -914,10 +1100,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Berserkers")
@@ -939,10 +1131,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Chaos")
@@ -964,10 +1162,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Infantry")
@@ -989,10 +1193,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Monsters")
@@ -1014,10 +1224,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Skaven")
@@ -1039,10 +1255,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Berserkers")
@@ -1064,10 +1286,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Infantry")
@@ -1089,10 +1317,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Monsters")
@@ -1114,10 +1348,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Armoured")
@@ -1139,10 +1379,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Berserkers")
@@ -1164,10 +1410,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Infantry")
@@ -1189,10 +1441,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Monsters")
@@ -1214,10 +1472,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Skaven")
@@ -1239,10 +1503,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Infantry") && InStr(Clipboard,"Berserkers")
@@ -1264,10 +1534,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Monsters") && InStr(Clipboard,"Berserkers")
@@ -1289,10 +1565,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Monsters") && InStr(Clipboard,"Infantry")
@@ -1314,10 +1596,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Armoured")
@@ -1339,10 +1627,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Berserkers")
@@ -1364,10 +1658,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Infantry")
@@ -1389,10 +1689,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Monsters")
@@ -1415,10 +1721,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Health")
@@ -1440,10 +1752,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Block Angle")
@@ -1465,10 +1783,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Cost")
@@ -1490,10 +1814,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Health")
@@ -1515,10 +1845,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Angle")
@@ -1541,10 +1877,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Crit Power")
@@ -1566,10 +1908,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Armoured")
@@ -1591,10 +1939,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Berserkers")
@@ -1616,10 +1970,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Chaos")
@@ -1641,10 +2001,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Infantry")
@@ -1666,10 +2032,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Monsters")
@@ -1691,10 +2063,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Skaven")
@@ -1716,10 +2094,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Armoured")
@@ -1741,10 +2125,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Berserkers")
@@ -1766,10 +2156,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Chaos")
@@ -1791,10 +2187,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Infantry")
@@ -1816,10 +2218,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Monsters")
@@ -1841,10 +2249,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Skaven")
@@ -1866,10 +2280,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Berserkers")
@@ -1891,10 +2311,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Infantry")
@@ -1916,10 +2342,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Monsters")
@@ -1941,10 +2373,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Armoured")
@@ -1966,10 +2404,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Berserkers")
@@ -1991,10 +2435,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Infantry")
@@ -2016,10 +2466,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Monsters")
@@ -2041,10 +2497,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Skaven")
@@ -2066,10 +2528,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Infantry") && InStr(Clipboard,"Berserkers")
@@ -2091,10 +2559,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Monsters") && InStr(Clipboard,"Infantry")
@@ -2116,10 +2590,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Armoured")
@@ -2141,10 +2621,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Berserkers")
@@ -2166,10 +2652,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Infantry")
@@ -2191,10 +2683,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Monsters")
@@ -2211,16 +2709,22 @@ Else
 }
 return
 
-;Trinket
+; Trinket
 T_cooldownCrit:
 WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Crit Chance")
@@ -2242,10 +2746,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Curse")
@@ -2267,10 +2777,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Movement")
@@ -2292,10 +2808,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Revive")
@@ -2317,10 +2839,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Stamina")
@@ -2342,10 +2870,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Curse")
@@ -2367,10 +2901,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Movement")
@@ -2392,10 +2932,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Revive")
@@ -2417,10 +2963,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Stamina")
@@ -2442,10 +2994,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Curse") && InStr(Clipboard,"Movement")
@@ -2467,10 +3025,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Curse") && InStr(Clipboard,"Stamina")
@@ -2492,10 +3056,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Movement") && InStr(Clipboard,"Revive")
@@ -2517,10 +3087,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Movement") && InStr(Clipboard,"Stamina")
@@ -2542,10 +3118,16 @@ WinActivate, Vermintide 2
 Sleep, 333
 Loop
 {
+Loop
+{
 CoordMode, Pixel, Window
 ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-If !ErrorLevel
+}
+Until ErrorLevel = 0
+
+If (ErrorLevel = 0)
 {
+Sleep, 333
 text := OCR([750, 590, 400, 70])
 Clipboard := % text
 If InStr(Clipboard,"Revive") && InStr(Clipboard,"Stamina")
