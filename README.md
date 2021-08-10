@@ -35,6 +35,8 @@ This stops the game windows from minimising every time you interact with the scr
 
 **USAGE:**
 
+Extract the folder "Auto Reroll" wherever you want and double click the file "Auto Reroll.ahk" to launch the script.
+
 To start the process of rerolling an item's properties, first make sure to load the item into the reroll slot in the crafting menu.
 
 Once that's done, bring up the script menu and navigate through the different submenus to the combination that you want.
