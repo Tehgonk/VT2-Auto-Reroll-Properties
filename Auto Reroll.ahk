@@ -1,11 +1,11 @@
 /*
 Name: Auto Re-roll.ahk
 Author: Bonk
-Version: 0.9.0.1
+Version: 0.9.0.2
 */
 
 #NoEnv
-CoordMode, Mouse, Window
+CoordMode, Mouse, Client
 SendMode Input
 #SingleInstance Force
 #WinActivateForce
@@ -135,3012 +135,2139 @@ return
 ; Melee
 M_attackBCR:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Block Cost")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Block Cost")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_attackCrit:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Crit Chance")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Crit Chance")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_attackCritPower:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Crit Power")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Crit Power")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_attackStam:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Stamina")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Stamina")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_attackChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_attackSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_bcrCrit:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Crit Chance")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Crit Chance")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_bcrCritPower:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Crit Power")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Crit Power")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_bcrPBA:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Block Angle")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Block Angle")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_bcrChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_bcrSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_critCritPower:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Crit Power")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Crit Power")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_critChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_critSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_critpowerChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_critpowerSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_staminaBCR:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Cost")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Block Cost")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_staminaCrit:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Crit Chance")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Crit Chance")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_staminaCritPower:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Crit Power")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Crit Power")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_staminaPBA:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Angle")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Block Angle")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_staminaChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_staminaSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 M_chaosSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 ; Ranged
 R_critCritPower:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Crit Power")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Crit Power")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critPowerArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critPowerBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critPowerChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critPowerInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critPowerMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_critPowerSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_armouredBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Armoured") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_armouredInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Armoured") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_armouredMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Armoured") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_chaosArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_chaosBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_chaosInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_chaosMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_chaosSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_infantryBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Infantry") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Infantry") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_monstersBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Monsters") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Monsters") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_monstersInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Monsters") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Monsters") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_skavenArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_skavenBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_skavenInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 R_skavenMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 ; Necklace
 N_bcrHealth:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Health")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Health")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 N_bcrPBA:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Block Cost") && InStr(Clipboard,"Block Angle")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Block Cost") && InStr(text,"Block Angle")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 N_staminaBCR:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Cost")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Block Cost")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 N_staminaHealth:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Health")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Health")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 N_staminaPBA:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Stamina") && InStr(Clipboard,"Block Angle")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Stamina") && InStr(text,"Block Angle")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 ; Charm
 C_attackCritPower:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Crit Power")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Crit Power")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_attackArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_attackBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_attackChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_attackInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_attackMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_attackSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Attack Speed") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Attack Speed") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_critpowerArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_critpowerBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_critpowerChaos:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Chaos")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Chaos")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_critpowerInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_critpowerMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_critpowerSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Power") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Power") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_armouredBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Armoured") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_armouredInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Armoured") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_armouredMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Armoured") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Armoured") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_chaosArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_chaosBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_chaosInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_chaosMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_chaosSkaven:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Chaos") && InStr(Clipboard,"Skaven")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Chaos") && InStr(text,"Skaven")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_infantryBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Infantry") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Infantry") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_monstersInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Monsters") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Monsters") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_skavenArmoured:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Armoured")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Armoured")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_skavenBerserkers:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Berserkers")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Berserkers")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_skavenInfantry:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Infantry")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Infantry")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 C_skavenMonsters:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Skaven") && InStr(Clipboard,"Monsters")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Skaven") && InStr(text,"Monsters")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 ; Trinket
 T_cooldownCrit:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Crit Chance")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Cooldown") && InStr(text,"Crit Chance")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_cooldownCurse:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Curse")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Cooldown") && InStr(text,"Curse")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_cooldownMovement:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Movement")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Cooldown") && InStr(text,"Movement")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_cooldownRevive:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Revive")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Cooldown") && InStr(text,"Revive")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_cooldownStamina:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Cooldown") && InStr(Clipboard,"Stamina")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Cooldown") && InStr(text,"Stamina")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_critCurse:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Curse")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Curse")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_critMovement:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Movement")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Movement")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_critRevive:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Revive")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Revive")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_critStamina:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Crit Chance") && InStr(Clipboard,"Stamina")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Crit Chance") && InStr(text,"Stamina")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_curseMovement:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Curse") && InStr(Clipboard,"Movement")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Curse") && InStr(text,"Movement")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_curseStamina:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Curse") && InStr(Clipboard,"Stamina")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Curse") && InStr(text,"Stamina")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_movementRevive:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Movement") && InStr(Clipboard,"Revive")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Movement") && InStr(text,"Revive")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_movementStamina:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Movement") && InStr(Clipboard,"Stamina")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Movement") && InStr(text,"Stamina")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
 T_reviveStamina:
 WinActivate, Vermintide 2
-Sleep, 333
 Loop
 {
-Loop
-{
-CoordMode, Pixel, Window
-ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, %A_WorkingDir%\BG.png
-}
-Until ErrorLevel = 0
-
-If (ErrorLevel = 0)
-{
-Sleep, 333
-text := OCR([750, 590, 400, 70])
-Clipboard := % text
-If InStr(Clipboard,"Revive") && InStr(Clipboard,"Stamina")
-{
-	Break
-}
-Else
-{
-	Click, 950, 900 Left, Down
-	Sleep, 50
-	Click, 950, 900 Left, Up
-}
-}
+	text := OCR([750, 590, 400, 70])
+	If !Trim(text)
+	{
+		continue
+	}
+	else if InStr(text,"Revive") && InStr(text,"Stamina")
+	{
+		break
+	}
+		else
+		{
+			Click, 950, 900 Left, Down
+			Sleep, 50
+			Click, 950, 900 Left, Up
+		}
 }
 return
 
