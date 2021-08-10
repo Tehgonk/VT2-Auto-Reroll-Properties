@@ -17,7 +17,7 @@ https://www.autohotkey.com/
 
 **Reroll Improvements:**
 
-https://steamcommunity.com/sharedfiles/filedetails
+https://steamcommunity.com/sharedfiles/filedetails/?id=1487862316
 
 **1080p Screen Resolution:**
 
