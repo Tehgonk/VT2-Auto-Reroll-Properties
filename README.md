@@ -4,6 +4,9 @@ This script automates the rerolling process by crating a menu system with (almos
 
 It uses OCR to cature the current properties on the item in the reroll slot and checks that agaisnt a predefined set of words that are associated with the menu item you selected. Make sure to read further for all the requirement and usage instructions.
 
+<a href="https://www.buymeacoffee.com/bonk" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+
 **REQUIREMENTS:**
 
 **AutoHotkey (not tested with v2):**
