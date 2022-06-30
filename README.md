@@ -6,7 +6,7 @@ It uses OCR to cature the current properties on the item in the reroll slot and 
 
 **Side note:** The method used in this script (Vis2 OCR) is not as fast as something like the built in ImageSearch function in AHK, but seems far more robust and does mean that making a menu item for all the different item property combinations is actually feasable. It also actually works for people with different setups, assuming the resolution is the same (screen coordinates), which doesn't seem to be the case with ImageSearch from my testing. 
 
-
+<br/><br/>
 **REQUIREMENTS:**
 
 **AutoHotkey (not tested with v2):**
@@ -21,12 +21,14 @@ Have a different screen resolution? Message me and I'll be happy to try to make 
 
 "OLD MENU LAYOUT" must be turned off while using the script. This is because it uses the results UI element to check if the selected combination matches the item properties.
 
+<br/><br/>
 **RECOMMENDED:**
 
 **Borderless Windowed Mode:** 
 
 This stops the game windows from minimising every time you interact with the scripts menu. Not necessary AFAIK, but it is a better experience
 
+<br/><br/>
 **USAGE:**
 
 Extract the folder "Auto Reroll" wherever you want and double click the file "Auto Reroll.ahk" to launch the script.
