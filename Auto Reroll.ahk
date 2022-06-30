@@ -10,13 +10,13 @@ SendMode Input
 #SingleInstance Force
 #WinActivateForce
 
-#include <Vis2> ; Handles OCR
+#include <Vis2> ; handles OCR
 
 ;;;;;;;;;;;;;;;;;;;;;; MENU ;;;;;;;;;;;;;;;;;;;;;;
 
 ; Melee menu
-Menu, Submenu1, Add, Crit Power - vs Skaven, menuHandler
 Menu, Submenu1, Add, Attack Speed - Crit Chance, menuHandler
+Menu, Submenu1, Add, Attack Speed - Block Cost Reduction, menuHandler
 Menu, Submenu1, Add, Attack Speed - Crit Power, menuHandler
 Menu, Submenu1, Add, Attack Speed - Stamina , menuHandler
 Menu, Submenu1, Add, Attack Speed - vs Chaos, menuHandler
@@ -26,6 +26,7 @@ Menu, Submenu1, Add, Block Cost Reduction - Crit Power, menuHandler
 Menu, Submenu1, Add, Block Cost Reduction - Push/Block Angle, menuHandler
 Menu, Submenu1, Add, Block Cost Reduction - vs Chaos, menuHandler
 Menu, Submenu1, Add, Block Cost Reduction - vs Skaven, menuHandler
+Menu, Submenu1, Add, Block Cost Reduction - vs Attack Speed, menuHandler
 Menu, Submenu1, Add, Crit Chance - Crit Power, menuHandler
 Menu, Submenu1, Add, Crit Chance - vs Chaos, menuHandler
 Menu, Submenu1, Add, Crit Chance - vs Skaven, menuHandler
@@ -135,24 +136,33 @@ return
 
 menuHandler(itemName)
 {
-	Properties := StrSplit(itemName, " - ", " ")
+	Properties := StrSplit(itemName, " - ", " ") ; split itemName string into 'Properties[1]' and 'Properties[2]'
 	WinActivate, Vermintide 2
 	Loop
 	{
-		text := OCR([750, 590, 400, 70])
-		If !Trim(text)
+		text := OCR([1400, 380, 380, 100]) ; [x, y, w, h] starting from x=0, y=0.
+
+		; Clipboard := text  ; for debugging
+
+        If !Trim(text) 	; possibly checks if the clipboard contains any text.
 		{
-			continue
+			continue	; once there 'text' contains something the loop continues.
 		}
-		else If InStr(text, Properties[1]) && InStr(text, Properties[2])
+
+		If InStr(text, Properties[1]) && InStr(text, Properties[2]) ; if 'text' contains both both parts of 'Properties' the loop breaks.
 		{
 			break
-		}
-		else
+		} 
+        else
 		{
-			Click, 950, 900 Left, Down
-			Sleep, 50
+            ; for debugging.
+            ; MsgBox, 0, error, fail
+            ; break
+
+			Click, 950, 900 Left, Down ; coordinates for the reroll button
+			Sleep, 400 ; time to hold down left click
 			Click, 950, 900 Left, Up
+            Sleep, 1500 ; might not be necesary but since there's an animation it might be useful to slow the loop down a bit.
 		}
 	}
 	
