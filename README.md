@@ -6,8 +6,6 @@ It uses OCR to cature the current properties on the item in the reroll slot and 
 
 **Side note:** The method used in this script (Vis2 OCR) is not as fast as something like the built in ImageSearch function in AHK, but seems far more robust and does mean that making a menu item for all the different item property combinations is actually feasable. It also actually works for people with different setups, assuming the resolution is the same (screen coordinates), which doesn't seem to be the case with ImageSearch from my testing. 
 
-<a href="https://www.buymeacoffee.com/bonk" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
 
 **REQUIREMENTS:**
 
